@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	text-align: center;
+}
+
+#userInfo {
+	margin: 20px auto;
+	width: 200px;
+}
+
+#setLang {
+	margin: 0 auto;
+	width: 200px;
+}
+
+#login {
+	margin: 0 auto;
+	/*width: 200px;*/
+}
+
+#loginError, #addProductError, #addUserError, #updateUserError {
+	color: red;
+}
+
+/****************************************************************************************************/
+#content {
+	/*padding: 20px 0px 0px 0px;*/
+	width: 100%;
+	float: left;
+}
+
+#sidebarLeft {
+	float: left;
+	width: 20%;
+}
+
+#menuMandator, #menuAdmin {
+	padding: 20px;
+}
+
+#menu {
+	padding: 20px;
+}
+
+/****************************************************************************************************/
+#center {
+	float: left;
+	width: 60%;
+}
+
+#mandatorMessage {
+	padding: 20px 0px 0px 0px;
+}
+
+.products {
+	margin: 20px;
+	border: 1px #000000 solid;
+	height: 220px;
+}
+
+.productLeft {
+	float: left;
+	margin: 20px;
+	width: 20%;
+	text-align: center;
+}
+
+.productImage {
+	margin: 0 auto;
+}
+
+.productPrice {
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+}
+
+.productName {
+	float: left;
+	padding: 20px 0px 20px 0px;
+	width: 70%;
+}
+
+.productDescription {
+	float: left;
+	width: 70%;
+}
+
+#tableProducts {
+	width: 60%;
+	border-spacing: 10px 10px;
+	/*border-collapse: collapse;*/
+}
+
+#tableProducts, #tableProducts th, #tableProducts td {
+	/*border: 2px #000000 solid;*/
+	border: 1px solid black;
+}
+
+#productsPagination {
+	/*border="1" cellpadding="5" cellspacing="5"*/
+}
+
+#usersPagination {
+	float: left;
+}
+
+#pagination {
+	margin: 0 auto;
+	border: 1px solid black;
+	border-scacing: 5px;
+}
+
+#pagination td {
+	padding: 6px;
+	border: 1px solid black;
+}
+
+/**********/
+#register {
+	margin: 0 auto;
+	width: 400px;
+}
+
+#registerError {
+	float: left;
+	color: red;
+}
+
+#registrationDone, #addProductDone, #updateProductDone, #delProductDone,
+	#addUserDone, #updateUserDone, #delUserDone {
+	float: left;
+	color: green;
+	width: 100%;
+}
+
+#registerHeader {
+	float: left;
+	padding: 0px 0px 20px 130px;
+}
+
+#registerLeft {
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+#registerRight {
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+#registerSubmit {
+	float: left;
+	padding: 20px 0px 0px 130px;
+}
+/**********/
+#formAddUserLeft {
+	float: left;
+	width: 30%;
+}
+
+#formAddUserRight {
+	float: left;
+	width: 30%;
+}
+/**********/
+#tableUsersRow {
+	float: left;
+	width: 100%;
+	padding: 0px 0px 40px 0px;
+}
+
+#tableUsersLeft {
+	float: left;
+	width: 40%;
+}
+
+#tableUsersRight {
+	float: left;
+	width: 30%;
+	padding: 0px 200px 0px 0px;
+}
+
+#tableUsersRowUpdate, #tableUsersRowDelete {
+	float: left;
+}
+/****************************************************************************************************/
+#sidebarRight {
+	width: 20%;
+	float: right;
+}
+
+#formFilterCategory p {
+	margin: 0;
+}

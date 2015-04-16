@@ -1,0 +1,137 @@
+Замечания по выполнению дз. 
+1. Все модели типа Address, Basket должны лежать в отдельном пакете.
+2. dao и имплементация для них тоже должны лежать в отдельном пакете 
+3. Неправильно получаешь конекшены. Ты их открываешь безрасудно, а это очень ресурсоемкий элемент
+4. В сервлетах очень большие методы
+разбей их на части
+А лучше добавь сервисов
+в целом не плохо
++  я не вижу чтоб ты через maven подтягивал зависимости
+
+
+
+To do:
+- filters jquery
+- save in github just src, web, pom.xml
+- github couple versions of project (how to do?)
+- use cookies
+- think how to do connection pull
+- remove pass from session or to do it more secure
+- try to delete messages from session and put them to parameters (error or done from session)
+error message why in session, what was the problem with it when passed through parameter 
+(maybe just for login, doget, if yes another places we can do through parameter)
+- implement some testing (we will learn Makito)
+- when creating categories, sort by name and remove from list root categories or
+create dropdown list with categories sorted and root category deny to chose
+- log4j write to web project root folder
+- basket store in local storage
+- check how works remember me (at login form)
+- comment project with java doc
+- add to basket button to add orders
+- RegisterController to do DOT(Data Object Transfer) or work with spring form
+/mandator?mandator=addProduct
+- load image name by browse image and copy image to project folder
+- categories - filter by parent category, then disable parent categories to be choose
+
+
+
+
+bugs:
+08.04.2015 - at main page not work page links
+- register page deny when user logged in or he can register another user ? (deny)
+- when user logged in save url and parameters ?
+- clean old parameters passwords, logins, roles
+- remove old servlets, controllers login, logout
+
+
+
+good to do:
+- admin users to update delete to do in table in rows
+
+
+
+Questions:
+- how to do properties in russian
+- how to change session variables in internet? if there is a solution
+- how to close conntections correct (or already done)
+- for what reason i create hashcode and equals methods in classes dao?
+- if i need add data to couple tables, how to do this, if i need autocommit in connection?
+
+
+
+Google:
+
+
+
+
+____________________________________________________________________________
+
+TESTING
+
+
+LOGIN, LOGOUT
+user (redirect to /shop) (and save parameters in link not work)
+admin (redirect to /shop)
+if logged in user or admin form login hides and information about user appears
+if logged in user or admin in main page in products list appear quantity and addToBusket button
+if logged out user or admin form login appears and information about user hides
+
+
+
+LOCALIZATION
+check all words translation
+/register
+/mandator
+/mandator?mandator=addProduct
+/mandator?mandator=updateProduct
+/admin
+/admin?task=addUser
+/admin?task=users
+/shop
+/shop after login
+/shop after adding products to basket
+- not saves page pagination
+
+
+
+BASKET
+- add to basket from various pages
+- remove from basket various
+
+
+
+WRITES for pages
+guest:
+/shop
+/register
+/mandator - redirect /shop
+/admin
+
+user:
+/shop
+/register - deny 403 error (redirect to page with info)
+/mandator - deny 403 error (redirect to page with info)
+/admin
+
+mandator:
+/shop	- deny 403 error (redirect to page with info)
+/register - deny 403 error (redirect to page with info)
+/mandator (add, update)
+/admin
+
+admin:
+/shop
+/register
+/mandator
+/admin
+
+
+
+REDIRECTING IF RIGHTS NOT ENOUGH
+guest:
+/mandator to /shop and write that rights not enough (or just redirect) (now redirect to /shop with error parameter)
+user:
+/mandator to /shop and write that rights not enough (or just redirect) (now 403)
+
+
+

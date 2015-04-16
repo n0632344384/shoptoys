@@ -1,0 +1,72 @@
+
+15.04.2015
+- removed servlets package with:
+	BasketAddServlet
+	BasketDelServlet
+	ErrorServlet
+	LoginServlet
+	MandatorServlet
+	RegisterServlet
+	SetLangServlet
+- removed from dao.impl:
+	AddressDaoImpl
+	CategoryDaoImpl
+	ProductDaoImpl
+	UserDaoImpl
+- cleaned dao.impl from conns and old stuff
+	AddressDaoImplHib
+	CategoryDaoImplHib
+	ProductDaoImplHib
+	RoleDaoImplHib
+	UserDaoImplHib
+- renamed dao.impl from ImplHib to Impl
+- renamed service.impl from ImplHib to Impl
+- removed package shop.connection
+	ConnectionPool
+	CurConn
+- removed package shop.utils
+	ExceptionControllerAdvice
+	MvcException
+- removed from dao and implementation not used methods
+- removed from pom.xml
+	mysql-connector-java
+- created backup shop_15.04.15
+
+15.04.2015
+- adminUpdateUsers.jsp updated. Moved session scope vars to params
+- adminUser.jsp updated. Moved session scope vars to params
+- refactor AdminController
+- tested admin. Added user, updated, deleted. Disable, enable, blank fields
+- done archiv shop_15.04.14
+
+14.04.2015
+- remove LoginController
+- remove LogoutController
+- check login, logout - work perfect
+- refactor LangSetController and added logger
+- tested setting different language at different pages
+- refactor BasketController and added logger
+- tested added products to basket and removed them from basket
+- content HomeController moved to ProductController and removed class HomeController
+- refactor ProductController and added logger
+- log4j reconfigured
+- refactor RegisterController and added logger
+- tested registering user
+- refactor MandatorController and added logger
+- tested mandator add, update, delete
+- modified adminUpdateUsers (deleted addresses, used users.address...)
+
+10.04.2015
+- done ajax for basket removing products
+- done ajax for adding products to basket
+- checked ajax for links pagination
+
+09.04.2015
+- fixed bug on main page. When loaded not worked pagination links
+- register changed to hibernate
+- added log4j
+
+06.04.2015
+- added connection pool
+- AddressDaoImpl added usage of connection pool
+- modified user class to hibernate (deleted id, seted role and address)
